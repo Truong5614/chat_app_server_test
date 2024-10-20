@@ -25,13 +25,13 @@ public class DatabaseConnection {
     }
 
     public void connectToDatabase() throws SQLException {
-    String server = "localhost";
-        String port = "3306";
-        String database = "chat_application";
-        String userName = "truong";
-        String password = "123456aA@";
+   String server = "autorack.proxy.rlwy.net";
+        String port = "41508";
+        String database = "railway";
+        String userName = "root";
+        String password = "TMHsGQfWToXxpRIXPdMFaBoECOusTRMM";
         String url = "jdbc:mysql://" + server + ":" + port + "/" + database 
-               + "?allowPublicKeyRetrieval=true&useSSL=false";
+               + "?allowPublicKeyRetrieval=true&useSSL=true&requireSSL=true";
 
         connection = java.sql.DriverManager.getConnection(url, userName, password);
 }
